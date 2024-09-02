@@ -42,7 +42,7 @@
 >
 	<div
 		data-len={$message.images.length > 0 ? true : null}
-		class="grid grid-cols-3 h-0 data-[len]:h-40 data-[len]:pb-6 transition-height duration-500 ease-in-out overflow-hidden"
+		class="grid grid-cols-3 gap-5 h-0 data-[len]:h-40 data-[len]:pb-6 transition-height duration-500 ease-in-out overflow-hidden"
 	>
 		{#each $message.images as src, i}
 			<div
@@ -57,7 +57,11 @@
 				>
 					<X class="stroke-noble-black-400" />
 				</button>
-				<img {src} class="shrink max-h-40 mx-auto" alt="" />
+				<img
+					{src}
+					class="max-h-full max-w-full my-auto mx-auto"
+					alt=""
+				/>
 			</div>
 		{/each}
 	</div>
