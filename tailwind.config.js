@@ -1,57 +1,59 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}", "./!(build|dist|.*)/**/*.{html,js}"],
+  content: ["./src/**.{html,js,svelte,ts,jsx,tsx}"],
   theme: {
     extend: {
+         transitionProperty: {
+        'height': 'height'
+      },
       colors: {
-        white: "#fff",
-        "gray-500": "#718096",
-        midnightblue: "#120f43",
-        "gray-200": "#e2e8f0",
-        darkslateblue: "#1b2559",
-        ghostwhite: "#f4f7fe",
-        gray1: "rgba(255, 255, 255, 0.14)",
-        gainsboro: "rgba(230, 230, 230, 0.14)",
-        lavender: "#f3efff",
-        blueviolet: "#603cff",
+        "noble-black-700": "#131619",
+        "noble-black-600": "#1a1d21",
+        "noble-black-300": "#9b9c9e",
+        "noble-black-400": "#686b6e",
+        "noble-black-800": "#0d0f10",
+        "noble-black-0": "#fff",
+        "noble-black-500": "#363a3d",
+        "glass-fill": "rgba(215, 237, 237, 0.16)",
+        royalblue: "#4d62e5",
+        lightgreen: "#b6f09c",
+        "glass-stroke": "rgba(255, 255, 255, 0.08)",
+        "noble-black-200": "#cdcecf",
+        "heisenberg-blue-500": "#82dbf7",
+        "noble-black-100": "#e8e9e9",
       },
       spacing: {},
       fontFamily: {
-        "plus-jakarta-sans": "'Plus Jakarta Sans'",
-        inherit: "inherit",
-        poppins: "Poppins",
+        "body-s-semibold": "'Plus Jakarta Sans'",
+        inter: "Inter",
       },
       borderRadius: {
-        "26xl": "45px",
-        sm: "14px",
-        "59xl": "78px",
-        "11xl": "30px",
-        "30xl": "49px",
+        "3xs": "10px",
         xl: "20px",
-        "41xl": "60px",
-        "20xl": "39px",
       },
     },
     fontSize: {
-      sm: "0.875rem",
-      xs: "0.75rem",
-      base: "1rem",
-      lg: "1.125rem",
+      xs: "12px",
+      sm: "14px",
+      xl: "20px",
+      base: "16px",
       inherit: "inherit",
     },
     screens: {
-      mq1125: {
-        raw: "screen and (max-width: 1125px)",
+      mq900: {
+        raw: "screen and (max-width: 900px)",
       },
-      mq1025: {
-        raw: "screen and (max-width: 1025px)",
-      },
-      mq750: {
-        raw: "screen and (max-width: 750px)",
+      mq675: {
+        raw: "screen and (max-width: 675px)",
       },
       mq450: {
         raw: "screen and (max-width: 450px)",
       },
+				'sm': '640px',
+				'md': '768px',
+				'lg': '1024px',
+				'xl': '1280px',
+				"2xl": "1400px"
     },
   },
   corePlugins: {

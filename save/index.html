@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" />
+</head>
+
+<body>
+    <div
+        class="w-full h-[1024px] relative rounded-3xl bg-noble-black-700 overflow-hidden leading-[normal] tracking-[normal] text-left text-xs text-noble-black-400 font-body-s-semibold mq450:h-auto mq450:min-h-[1024]">
+        <div
+            class="absolute top-[12px] left-[12px] rounded-xl bg-noble-black-800 w-[312px] h-[1000px] flex flex-col items-start justify-start pt-24 px-0 pb-0 box-border">
+            <div
+                class="self-stretch h-[194px] border-noble-black-700 border-b-[1px] border-solid box-border flex flex-col items-start justify-start py-6 px-2 gap-6">
+                <div class="self-stretch flex flex-row items-start justify-start py-0 px-4">
+                    <a
+                        class="[text-decoration:none] relative tracking-[0.15px] leading-[18px] font-semibold text-[inherit] inline-block min-w-[57px]">GENERAL</a>
+                </div>
+                <div
+                    class="self-stretch flex-1 flex flex-col items-start justify-start gap-2 text-center text-sm text-noble-black-100">
+                    <div class="self-stretch rounded-lg flex flex-row items-center justify-start py-[11px] px-4 gap-4">
+                        <div
+                            class="h-5 flex-1 flex flex-row items-center justify-start py-0 pl-0 pr-[125px] box-border gap-4">
+                            <img class="h-5 w-5 relative min-h-[20px]" loading="lazy" alt="" src="/public/search.svg" />
+
+                            <div
+                                class="relative tracking-[0.15px] leading-[20px] font-semibold inline-block min-w-[49px]">
+                                Search
+                            </div>
+                        </div>
+                        <div
+                            class="w-[38px] shadow-[0px_1px_2px_-1px_rgba(0,_0,_0,_0.05),_0px_1px_3px_rgba(0,_0,_0,_0.05)] rounded [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-[1px] border-solid box-border flex flex-row items-center justify-end py-0.5 pl-1.5 pr-[7px] text-xs text-noble-black-300 font-inter">
+                            <div
+                                class="relative tracking-[0.15px] leading-[18px] inline-block min-w-[23px] whitespace-nowrap">
+                                <span class="font-semibold">⌘</span>
+                                <span class="font-semibold font-body-s-semibold"> S</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="self-stretch flex-1 rounded-lg flex flex-row items-center justify-start py-3.5 px-4 gap-4">
+                        <div
+                            class="self-stretch flex-1 flex flex-row items-center justify-start py-0 pl-0 pr-[186px] gap-4">
+                            <input
+                                class="m-0 h-5 w-5 relative [filter:drop-shadow(0px_10px_15px_rgba(104,_107,_110,_0.16))_drop-shadow(0px_4px_6px_rgba(104,_107,_110,_0.16))] min-h-[20px]"
+                                type="checkbox" />
+
+                            <div
+                                class="relative tracking-[0.15px] leading-[20px] font-semibold inline-block min-w-[42px]">
+                                Billing
+                            </div>
+                        </div>
+                        <div
+                            class="shadow-[0px_1px_2px_-1px_rgba(0,_0,_0,_0.05),_0px_1px_3px_rgba(0,_0,_0,_0.05)] rounded [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-[1px] border-solid hidden flex-row items-center justify-end py-0.5 pl-1.5 pr-[7px] text-xs text-noble-black-300 font-inter">
+                            <div
+                                class="h-[18px] relative tracking-[0.15px] leading-[18px] flex items-center whitespace-nowrap">
+                                <span>
+                                    <span class="font-semibold">⌘</span>
+                                    <span class="font-semibold font-body-s-semibold"> S</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="self-stretch flex-1 flex flex-col items-start justify-start pt-6 px-2 pb-[276px] gap-6">
+                <div class="self-stretch flex flex-row items-start justify-start py-0 px-4">
+                    <a
+                        class="[text-decoration:none] relative tracking-[0.15px] leading-[18px] font-semibold text-[inherit] inline-block min-w-[63px]">PROJECTS</a>
+                </div>
+                <div
+                    class="self-stretch flex-1 flex flex-col items-start justify-start gap-2 text-center text-sm text-noble-black-100">
+                    <div
+                        class="self-stretch rounded-lg [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-t-[1px] border-solid flex flex-row items-center justify-start pt-3 px-4 pb-3.5 gap-4">
+                        <div class="flex-1 flex flex-row items-center justify-start py-0 pl-0 pr-[113px] gap-4">
+                            <input
+                                class="m-0 h-5 w-5 relative [filter:drop-shadow(0px_10px_15px_rgba(182,_240,_156,_0.16))_drop-shadow(0px_4px_6px_rgba(182,_240,_156,_0.16))]"
+                                type="checkbox" />
+
+                            <div
+                                class="relative tracking-[0.15px] leading-[20px] font-semibold inline-block min-w-[115px]">
+                                Orbital Oddysey
+                            </div>
+                        </div>
+                        <div
+                            class="shadow-[0px_1px_2px_-1px_rgba(0,_0,_0,_0.05),_0px_1px_3px_rgba(0,_0,_0,_0.05)] rounded [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-[1px] border-solid hidden flex-row items-center justify-end py-0.5 pl-1.5 pr-[7px] text-xs text-noble-black-300 font-inter">
+                            <div class="h-[18px] relative tracking-[0.15px] leading-[18px] flex items-center">
+                                <span>
+                                    <span class="font-semibold">⌘</span>
+                                    <span class="font-semibold font-body-s-semibold"> S</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="self-stretch flex-1 rounded-lg flex flex-row items-center justify-start py-3.5 px-4 gap-4">
+                        <div
+                            class="self-stretch flex-1 flex flex-row items-center justify-start py-0 pl-0 pr-[72px] gap-4">
+                            <img class="h-5 w-5 relative min-h-[20px]" loading="lazy" alt=""
+                                src="/public/triangle.svg" />
+
+                            <div class="relative tracking-[0.15px] leading-[20px] font-semibold">
+                                Digital Product Launch
+                            </div>
+                        </div>
+                        <div
+                            class="shadow-[0px_1px_2px_-1px_rgba(0,_0,_0,_0.05),_0px_1px_3px_rgba(0,_0,_0,_0.05)] rounded [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-[1px] border-solid hidden flex-row items-center justify-end py-0.5 pl-1.5 pr-[7px] text-xs text-noble-black-300 font-inter">
+                            <div class="h-[18px] relative tracking-[0.15px] leading-[18px] flex items-center">
+                                <span>
+                                    <span class="font-semibold">⌘</span>
+                                    <span class="font-semibold font-body-s-semibold"> S</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="self-stretch rounded-lg flex flex-row items-center justify-start py-3.5 px-4 gap-4">
+                        <div class="flex-1 flex flex-row items-center justify-start py-0 pl-0 pr-[131px] gap-4">
+                            <input
+                                class="m-0 h-5 w-5 relative [filter:drop-shadow(0px_10px_15px_rgba(226,_111,_32,_0.16))_drop-shadow(0px_4px_6px_rgba(226,_111,_32,_0.16))]"
+                                type="checkbox" />
+
+                            <div
+                                class="relative tracking-[0.15px] leading-[20px] font-semibold inline-block min-w-[97px]">
+                                Brand Refresh
+                            </div>
+                        </div>
+                        <div
+                            class="shadow-[0px_1px_2px_-1px_rgba(0,_0,_0,_0.05),_0px_1px_3px_rgba(0,_0,_0,_0.05)] rounded [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-[1px] border-solid hidden flex-row items-center justify-end py-0.5 pl-1.5 pr-[7px] text-xs text-noble-black-300 font-inter">
+                            <div class="h-[18px] relative tracking-[0.15px] leading-[18px] flex items-center">
+                                <span>
+                                    <span class="font-semibold">⌘</span>
+                                    <span class="font-semibold font-body-s-semibold"> S</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="self-stretch flex-1 rounded-lg flex flex-row items-center justify-start py-3.5 px-4 gap-4">
+                        <div
+                            class="self-stretch flex-1 flex flex-row items-center justify-start py-0 pl-0 pr-[77px] gap-4">
+                            <img class="h-5 w-5 relative min-h-[20px]" loading="lazy" alt=""
+                                src="/public/octagon.svg" />
+
+                            <div class="relative tracking-[0.15px] leading-[20px] font-semibold">
+                                Social Media Strategy
+                            </div>
+                        </div>
+                        <div
+                            class="shadow-[0px_1px_2px_-1px_rgba(0,_0,_0,_0.05),_0px_1px_3px_rgba(0,_0,_0,_0.05)] rounded [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-[1px] border-solid hidden flex-row items-center justify-end py-0.5 pl-1.5 pr-[7px] text-xs text-noble-black-300 font-inter">
+                            <div class="h-[18px] relative tracking-[0.15px] leading-[18px] flex items-center">
+                                <span>
+                                    <span class="font-semibold">⌘</span>
+                                    <span class="font-semibold font-body-s-semibold"> S</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="cursor-pointer [border:none] py-3.5 px-4 bg-[transparent] self-stretch rounded-lg flex flex-row items-center justify-start gap-4">
+                        <button
+                            class="cursor-pointer [border:none] py-0 pl-0 pr-[114px] bg-[transparent] flex-1 flex flex-row items-center justify-start gap-4">
+                            <img class="h-5 w-5 relative min-h-[20px]" loading="lazy" alt=""
+                                src="/public/pluscircle.svg" />
+
+                            <div
+                                class="relative text-sm tracking-[0.15px] leading-[20px] font-semibold font-body-s-semibold text-noble-black-400 text-center inline-block min-w-[114px]">
+                                Add new project
+                            </div>
+                        </button>
+                        <div
+                            class="shadow-[0px_1px_2px_-1px_rgba(0,_0,_0,_0.05),_0px_1px_3px_rgba(0,_0,_0,_0.05)] rounded [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-[1px] border-solid hidden flex-row items-center justify-end py-0.5 pl-1.5 pr-[7px]">
+                            <div
+                                class="h-[18px] relative text-xs tracking-[0.15px] leading-[18px] text-noble-black-300 text-center flex items-center">
+                                <span>
+                                    <span class="font-semibold font-inter">⌘</span>
+                                    <span class="font-semibold font-body-s-semibold"> S</span>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div
+                class="self-stretch h-24 flex flex-col items-start justify-start p-2 box-border text-center text-base text-noble-black-0">
+                <div
+                    class="self-stretch flex-1 rounded-2xl [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-t-[1px] border-solid flex flex-row items-center justify-between p-4 gap-5">
+                    <div class="self-stretch flex flex-row items-center justify-start gap-4">
+                        <img class="h-12 w-12 relative rounded-xl min-h-[48px]" loading="lazy" alt=""
+                            src="/public/avatar.svg" />
+
+                        <div class="flex flex-col items-start justify-start gap-1">
+                            <div
+                                class="relative tracking-[0.15px] leading-[24px] font-semibold inline-block min-w-[70px]">
+                                Ryan Lee
+                            </div>
+                            <div
+                                class="relative text-xs tracking-[0.15px] leading-[18px] font-medium text-lightgreen inline-block min-w-[53px]">
+                                Premium
+                            </div>
+                        </div>
+                    </div>
+                    <img class="h-6 w-6 relative" loading="lazy" alt="" src="/public/cog.svg" />
+                </div>
+            </div>
+        </div>
+        <section
+            class="absolute top-[12px] left-[336px] rounded-xl bg-noble-black-800 w-[1092px] flex flex-row items-start justify-start pt-[104px] px-0 pb-0 box-border max-w-full text-center text-sm text-noble-black-300 font-body-s-semibold">
+            <div class="flex-1 flex flex-row items-start justify-start py-[30px] px-6 box-border max-w-full">
+                <div class="flex flex-row items-start justify-start gap-6 max-w-full mq450:flex-wrap">
+                    <div
+                        class="h-5 flex flex-row items-start justify-start py-0 px-2 box-border relative gap-[11px] text-noble-black-100">
+                        <img class="h-5 w-5 relative min-h-[20px]" alt="" src="/public/artificium.svg" />
+
+                        <div class="relative tracking-[0.15px] leading-[20px] font-semibold inline-block min-w-[68px]">
+                            Artificium
+                        </div>
+                        <div
+                            class="h-1 w-[116px] absolute !m-[0] right-[-1px] bottom-[-30px] shadow-[0px_10px_15px_-3px_rgba(182,_240,_156,_0.16),_0px_4px_6px_-4px_rgba(182,_240,_156,_0.16)] rounded-t rounded-b-none bg-lightgreen">
+                        </div>
+                    </div>
+                    <div class="h-5 flex flex-row items-start justify-start py-0 px-2 box-border gap-3">
+                        <img class="h-5 w-5 relative min-h-[20px]" loading="lazy" alt=""
+                            src="/public/commentcircle.svg" />
+
+                        <div class="relative tracking-[0.15px] leading-[20px] font-semibold inline-block min-w-[34px]">
+                            Chat
+                        </div>
+                    </div>
+                    <div class="h-5 flex flex-row items-start justify-start py-0 px-2 box-border gap-3">
+                        <img class="h-5 w-5 relative min-h-[20px]" loading="lazy" alt="" src="/public/folder.svg" />
+
+                        <a
+                            class="[text-decoration:none] relative tracking-[0.15px] leading-[20px] font-semibold text-[inherit] inline-block min-w-[48px]">Library</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="absolute top-[208px] left-[336px] w-[1092px] h-[696px] overflow-hidden flex flex-col items-start justify-start pt-[92px] px-5 pb-5 box-border gap-4 max-w-full text-center text-base text-noble-black-0 font-body-s-semibold mq900:h-auto">
+            <div
+                class="mt-[-2240px] self-stretch rounded-2xl border-noble-black-600 border-[1px] border-solid box-border flex flex-row items-start justify-start flex-wrap content-start py-3.5 px-[15px] gap-6 shrink-0 max-w-full">
+                <img class="h-12 w-12 relative rounded-xl" alt="" src="/public/avatar.svg" />
+
+                <div
+                    class="flex-1 flex flex-col items-start justify-start py-2 px-0 box-border gap-6 min-w-[616px] max-w-full mq900:min-w-full">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-3">
+                        <div class="self-stretch flex flex-row items-center justify-between gap-5 mq450:flex-wrap">
+                            <div class="h-6 w-[145px] flex flex-row items-center justify-start gap-4">
+                                <a
+                                    class="[text-decoration:none] self-stretch flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center justify-center">Ryan
+                                    Lee</a>
+                                <a
+                                    class="[text-decoration:none] h-[18px] w-[59px] relative text-xs tracking-[0.15px] leading-[18px] font-medium text-noble-black-400 flex items-center justify-center">13sec
+                                    ago</a>
+                            </div>
+                            <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch h-6 relative tracking-[0.15px] leading-[24px] font-medium text-noble-black-300 text-left flex items-center">
+                            Hi, can you help me with some ideas for the show?
+                        </div>
+                    </div>
+                    <div
+                        class="w-[247px] hidden flex-row items-start justify-start gap-3 text-left text-xs text-noble-black-300">
+                        <div
+                            class="h-8 flex-1 rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-2 px-[11px] box-border gap-1.5">
+                            <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+
+                            <div
+                                class="h-[18px] flex-1 relative tracking-[0.15px] leading-[18px] font-semibold flex items-center">
+                                Regenerate response
+                            </div>
+                            <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+                        </div>
+                        <div
+                            class="h-8 rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-2 px-3 box-border gap-0.5">
+                            <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+
+                            <div class="relative tracking-[0.15px] leading-[18px] font-semibold">
+                                Modify
+                            </div>
+                            <img class="h-4 w-4 relative min-h-[16px]" alt="" src="/public/chevrondowntiny.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="self-stretch rounded-2xl border-noble-black-600 border-[1px] border-solid box-border flex flex-row items-start justify-start flex-wrap content-start py-3.5 px-[15px] gap-6 shrink-0 max-w-full">
+                <img class="h-12 w-12 relative rounded-xl" alt="" src="/public/avatar-2.svg" />
+
+                <div
+                    class="flex-1 flex flex-col items-start justify-start py-2 px-0 box-border gap-6 min-w-[616px] max-w-full mq900:min-w-full">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-3">
+                        <div class="self-stretch flex flex-row items-center justify-between gap-5 mq450:flex-wrap">
+                            <div class="h-6 w-[151px] flex flex-row items-center justify-start gap-4">
+                                <a
+                                    class="[text-decoration:none] self-stretch flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center justify-center">Artificium</a>
+                                <a
+                                    class="[text-decoration:none] h-[18px] w-[58px] relative text-xs tracking-[0.15px] leading-[18px] font-medium text-noble-black-400 flex items-center justify-center">11sec
+                                    now</a>
+                            </div>
+                            <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch h-6 relative tracking-[0.15px] leading-[24px] font-medium text-noble-black-300 text-left flex items-center">
+                            Of course! What kind of ideas are you looking for?
+                        </div>
+                    </div>
+                    <div
+                        class="w-[247px] h-8 flex flex-row items-start justify-start gap-3 text-left text-xs text-noble-black-300">
+                        <div
+                            class="flex-1 rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-[7px] px-[11px] gap-1.5">
+                            <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+
+                            <div
+                                class="h-[18px] flex-1 relative tracking-[0.15px] leading-[18px] font-semibold flex items-center">
+                                Regenerate response
+                            </div>
+                            <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+                        </div>
+                        <div
+                            class="self-stretch w-[84px] rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-[7px] px-3 box-border gap-0.5">
+                            <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+
+                            <a
+                                class="[text-decoration:none] self-stretch flex-1 relative tracking-[0.15px] leading-[18px] font-semibold text-[inherit] flex items-center">Modify</a>
+                            <img class="h-4 w-4 relative" alt="" src="/public/chevrondowntiny.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="self-stretch rounded-2xl border-noble-black-600 border-[1px] border-solid box-border flex flex-row items-start justify-start flex-wrap content-start py-3.5 px-[15px] gap-6 shrink-0 max-w-full">
+                <img class="h-12 w-12 relative rounded-xl" alt="" src="/public/avatar.svg" />
+
+                <div
+                    class="flex-1 flex flex-col items-start justify-start py-2 px-0 box-border gap-6 min-w-[616px] max-w-full mq900:min-w-full">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-3">
+                        <div class="self-stretch flex flex-row items-center justify-between gap-5 mq450:flex-wrap">
+                            <div class="h-6 w-[147px] flex flex-row items-center justify-start gap-4">
+                                <a
+                                    class="[text-decoration:none] self-stretch flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center justify-center">Ryan
+                                    Lee</a>
+                                <a
+                                    class="[text-decoration:none] h-[18px] w-[61px] relative text-xs tracking-[0.15px] leading-[18px] font-medium text-noble-black-400 flex items-center justify-center">12
+                                    sec ago</a>
+                            </div>
+                            <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch h-6 relative tracking-[0.15px] leading-[24px] font-medium text-noble-black-300 text-left flex items-center">
+                            I'm not sure, maybe something related to the spaceship?
+                        </div>
+                    </div>
+                    <div
+                        class="w-[247px] hidden flex-row items-start justify-start gap-3 text-left text-xs text-noble-black-300">
+                        <div
+                            class="h-8 flex-1 rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-2 px-[11px] box-border gap-1.5">
+                            <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+
+                            <div
+                                class="h-[18px] flex-1 relative tracking-[0.15px] leading-[18px] font-semibold flex items-center">
+                                Regenerate response
+                            </div>
+                            <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+                        </div>
+                        <div
+                            class="h-8 rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-2 px-3 box-border gap-0.5">
+                            <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+
+                            <div class="relative tracking-[0.15px] leading-[18px] font-semibold">
+                                Modify
+                            </div>
+                            <img class="h-4 w-4 relative min-h-[16px]" alt="" src="/public/chevrondowntiny.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="self-stretch rounded-2xl border-noble-black-600 border-[1px] border-solid box-border flex flex-row items-start justify-start flex-wrap content-start py-3.5 px-[15px] gap-6 shrink-0 max-w-full text-left">
+                <img class="h-12 w-12 relative rounded-xl" alt="" src="/public/avatar-2.svg" />
+
+                <div
+                    class="flex-1 flex flex-col items-start justify-start py-2 px-0 box-border gap-6 min-w-[616px] max-w-full mq900:min-w-full">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-3 text-center">
+                        <div class="self-stretch flex flex-row items-center justify-between gap-5 mq450:flex-wrap">
+                            <div class="h-6 w-[152px] flex flex-row items-center justify-start gap-4">
+                                <a
+                                    class="[text-decoration:none] self-stretch flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center justify-center">Artificium</a>
+                                <a
+                                    class="[text-decoration:none] h-[18px] w-[59px] relative text-xs tracking-[0.15px] leading-[18px] font-medium text-noble-black-400 flex items-center justify-center">11
+                                    sec ago</a>
+                            </div>
+                            <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch h-12 relative tracking-[0.15px] leading-[24px] font-medium text-noble-black-300 text-left flex items-center">
+                            How about exploring the backstory of the spaceship's name,
+                            Odyssey? Maybe it was named after the captain's daughter who
+                            always dreamed of exploring the stars. I have some ideas!
+                        </div>
+                    </div>
+                    <div
+                        class="w-[444px] flex flex-row items-start justify-start gap-3 max-w-full text-noble-black-200 mq450:flex-wrap">
+                        <div
+                            class="flex-1 rounded-lg bg-noble-black-800 flex flex-row items-center justify-start py-1 pl-3 pr-2 box-border gap-[7px] min-w-[106px]">
+                            <a
+                                class="[text-decoration:none] h-6 flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] whitespace-pre-wrap flex items-center">🚀
+                                Stellara</a>
+                            <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="flex-1 rounded-lg bg-noble-black-800 flex flex-row items-center justify-start py-1 pl-3 pr-2 box-border gap-2 min-w-[106px]">
+                            <a
+                                class="[text-decoration:none] h-6 flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] whitespace-pre-wrap flex items-center">🌟
+                                Galaxia</a>
+                            <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="flex-1 rounded-lg bg-noble-black-800 flex flex-row items-center justify-start py-1 pl-3 pr-2 box-border gap-[7px] min-w-[103px]">
+                            <a
+                                class="[text-decoration:none] h-6 flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] whitespace-pre-wrap flex items-center">💫
+                                Astraia</a>
+                            <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[247px] h-8 flex flex-row items-start justify-start gap-3 text-xs text-noble-black-300">
+                        <div
+                            class="flex-1 rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-[7px] px-[11px] gap-1.5">
+                            <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+
+                            <div
+                                class="h-[18px] flex-1 relative tracking-[0.15px] leading-[18px] font-semibold flex items-center">
+                                Regenerate response
+                            </div>
+                            <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+                        </div>
+                        <div
+                            class="self-stretch w-[84px] rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-[7px] px-3 box-border gap-0.5">
+                            <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+
+                            <a
+                                class="[text-decoration:none] self-stretch flex-1 relative tracking-[0.15px] leading-[18px] font-semibold text-[inherit] flex items-center">Modify</a>
+                            <img class="h-4 w-4 relative" alt="" src="/public/chevrondowntiny.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="self-stretch rounded-2xl border-noble-black-600 border-[1px] border-solid box-border flex flex-row items-start justify-start flex-wrap content-start py-3.5 px-[15px] gap-6 shrink-0 max-w-full">
+                <img class="h-12 w-12 relative rounded-xl" alt="" src="/public/avatar.svg" />
+
+                <div
+                    class="flex-1 flex flex-col items-start justify-start py-2 px-0 box-border gap-6 min-w-[616px] max-w-full mq900:min-w-full">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-3">
+                        <div class="self-stretch flex flex-row items-center justify-between gap-5 mq450:flex-wrap">
+                            <div class="h-6 w-[143px] flex flex-row items-center justify-start gap-4">
+                                <a
+                                    class="[text-decoration:none] self-stretch flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center justify-center">Ryan
+                                    Lee</a>
+                                <a
+                                    class="[text-decoration:none] h-[18px] w-[57px] relative text-xs tracking-[0.15px] leading-[18px] font-medium text-noble-black-400 flex items-center justify-center">8
+                                    sec ago</a>
+                            </div>
+                            <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch h-12 relative tracking-[0.15px] leading-[24px] text-left flex items-center text-noble-black-300">
+                            <span>
+                                <span class="font-medium">Hmm, those are good. But I was hoping for something a bit
+                                    more unique. Maybe a name that relates to the story in some
+                                    way? What you think
+                                </span>
+                                <span class="font-semibold text-heisenberg-blue-500">@issabel</span>
+                                <span class="font-medium"> ?</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[247px] hidden flex-row items-start justify-start gap-3 text-left text-xs text-noble-black-300">
+                        <div
+                            class="h-8 flex-1 rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-2 px-[11px] box-border gap-1.5">
+                            <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+
+                            <div
+                                class="h-[18px] flex-1 relative tracking-[0.15px] leading-[18px] font-semibold flex items-center">
+                                Regenerate response
+                            </div>
+                            <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+                        </div>
+                        <div
+                            class="h-8 rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-2 px-3 box-border gap-0.5">
+                            <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+
+                            <div class="relative tracking-[0.15px] leading-[18px] font-semibold">
+                                Modify
+                            </div>
+                            <img class="h-4 w-4 relative min-h-[16px]" alt="" src="/public/chevrondowntiny.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="self-stretch rounded-2xl border-noble-black-600 border-[1px] border-solid box-border flex flex-row items-start justify-start flex-wrap content-start pt-3.5 px-[15px] pb-[22px] gap-6 shrink-0 max-w-full text-left text-noble-black-300">
+                <img class="h-12 w-12 relative rounded-xl" alt="" src="/public/avatar-6.svg" />
+
+                <div
+                    class="flex-1 flex flex-col items-start justify-start pt-2 px-0 pb-0 box-border min-w-[616px] max-w-full mq900:min-w-full">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-3 max-w-full">
+                        <div
+                            class="self-stretch flex flex-row items-start justify-between gap-5 text-center text-heisenberg-blue-500 mq450:flex-wrap">
+                            <div
+                                class="h-7 w-[153px] flex flex-col items-start justify-start pt-1 px-0 pb-0 box-border">
+                                <div class="self-stretch flex-1 flex flex-row items-start justify-start gap-4">
+                                    <a
+                                        class="[text-decoration:none] self-stretch flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center justify-center">Isabella
+                                        Chen</a>
+                                    <div
+                                        class="w-[31px] flex flex-col items-start justify-start pt-[3px] px-0 pb-0 box-border text-xs text-noble-black-400">
+                                        <a
+                                            class="[text-decoration:none] self-stretch h-[18px] relative tracking-[0.15px] leading-[18px] font-medium text-[inherit] flex items-center justify-center">6
+                                            sec</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="w-[378px] h-6 relative tracking-[0.15px] leading-[24px] font-medium flex items-center max-w-full">
+                            Good point! Let's see... How about these names:
+                        </div>
+                        <div
+                            class="w-[567px] flex flex-row items-start justify-start gap-3 max-w-full text-noble-black-200 mq675:flex-wrap">
+                            <div
+                                class="flex-1 rounded-lg [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-t-[1px] border-solid box-border flex flex-row items-center justify-start pt-0.5 pb-1 pl-3 pr-2 gap-2 min-w-[127px]">
+                                <a
+                                    class="[text-decoration:none] h-6 flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center">Starlight
+                                    Voyager</a>
+                                <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                    <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                                </div>
+                            </div>
+                            <div
+                                class="w-[183px] rounded-lg [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-t-[1px] border-solid box-border flex flex-row items-center justify-start pt-0.5 pb-1 pl-3 pr-2 gap-2">
+                                <a
+                                    class="[text-decoration:none] h-6 flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center">Galaxy
+                                    Explorer</a>
+                                <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                    <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                                </div>
+                            </div>
+                            <div
+                                class="w-[164px] rounded-lg [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-t-[1px] border-solid box-border flex flex-row items-center justify-start pt-0.5 pb-1 pl-3 pr-2 gap-2">
+                                <a
+                                    class="[text-decoration:none] h-6 flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center">Nova
+                                    Pioneer</a>
+                                <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                    <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch h-12 relative tracking-[0.15px] leading-[24px] font-medium flex items-center">
+                            <span>
+                                <p class="m-0">
+                                    Do any of those spark some inspiration? Also, have you seen
+                                    this concept art yet? It's absolutely stunning 🔥 🔥 🔥
+                                </p>
+                            </span>
+                        </div>
+                        <div
+                            class="w-[400px] rounded-2xl overflow-hidden flex flex-row items-start justify-end pt-3 px-3 pb-[268px] box-border bg-[url('/public/image@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full">
+                            <div
+                                class="h-10 shadow-[16px_24px_64px_-24px_rgba(255,_255,_255,_0.08)_inset,_0px_24px_24px_-16px_rgba(0,_0,_0,_0.12),_0px_8px_12px_rgba(255,_255,_255,_0.08)_inset] rounded-xl [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-fill border-t-[1px] border-solid box-border flex flex-row items-center justify-center py-2 px-2.5">
+                                <img class="h-5 w-5 relative" alt="" src="/public/dots.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden flex-row items-start justify-start gap-3 text-xs">
+                    <div
+                        class="h-8 flex-1 rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-2 px-[11px] box-border gap-1.5">
+                        <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+
+                        <div
+                            class="h-[18px] flex-1 relative tracking-[0.15px] leading-[18px] font-semibold flex items-center">
+                            Regenerate response
+                        </div>
+                        <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+                    </div>
+                    <div
+                        class="h-8 rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-2 px-3 box-border gap-0.5">
+                        <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+
+                        <div class="relative tracking-[0.15px] leading-[18px] font-semibold">
+                            Modify
+                        </div>
+                        <img class="h-4 w-4 relative min-h-[16px]" alt="" src="/public/chevrondowntiny.svg" />
+                    </div>
+                </div>
+            </div>
+            <div
+                class="self-stretch rounded-2xl border-noble-black-600 border-[1px] border-solid box-border flex flex-row items-start justify-start flex-wrap content-start pt-3.5 px-[15px] pb-[78px] gap-6 shrink-0 max-w-full text-left">
+                <img class="h-12 w-12 relative rounded-xl" alt="" src="/public/avatar-2.svg" />
+
+                <div
+                    class="flex-1 flex flex-col items-start justify-start pt-[464px] px-0 pb-0 box-border min-w-[616px] max-w-full mq900:min-w-full">
+                    <div
+                        class="self-stretch h-12 flex flex-col items-start justify-start gap-6 max-w-full mq450:h-auto">
+                        <div
+                            class="mt-[-456px] self-stretch flex flex-col items-start justify-start gap-3 shrink-0 text-center">
+                            <div class="self-stretch flex flex-row items-center justify-between gap-5 mq450:flex-wrap">
+                                <div class="h-6 w-[142px] flex flex-row items-center justify-start gap-4">
+                                    <a
+                                        class="[text-decoration:none] self-stretch flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center justify-center">Artificium</a>
+                                    <a
+                                        class="[text-decoration:none] h-[18px] w-[49px] relative text-xs tracking-[0.15px] leading-[18px] font-medium text-noble-black-400 flex items-center justify-center">just
+                                        now</a>
+                                </div>
+                                <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                    <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                                </div>
+                            </div>
+                            <div
+                                class="self-stretch h-6 relative tracking-[0.15px] leading-[24px] font-medium text-noble-black-300 text-left flex items-center">
+                                Sure thing! How about these spaceship names:
+                            </div>
+                        </div>
+                        <div
+                            class="w-[509px] flex flex-row items-start justify-start gap-3 shrink-0 max-w-full text-noble-black-200 mq675:flex-wrap">
+                            <div
+                                class="w-[119px] rounded-lg [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-t-[1px] border-solid box-border flex flex-row items-center justify-start pt-0.5 pb-1 pl-3 pr-2 gap-2">
+                                <a
+                                    class="[text-decoration:none] h-6 flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center">Starfire</a>
+                                <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                    <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                                </div>
+                            </div>
+                            <div
+                                class="w-[125px] rounded-lg [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-t-[1px] border-solid box-border flex flex-row items-center justify-start pt-0.5 pb-1 pl-3 pr-2 gap-2">
+                                <a
+                                    class="[text-decoration:none] h-6 flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center">Celestia</a>
+                                <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                    <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                                </div>
+                            </div>
+                            <div
+                                class="flex-1 rounded-lg [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-stroke border-t-[1px] border-solid box-border flex flex-row items-center justify-start pt-0.5 pb-1 pl-3 pr-2 gap-2 min-w-[123px]">
+                                <a
+                                    class="[text-decoration:none] h-6 flex-1 relative tracking-[0.15px] leading-[24px] font-semibold text-[inherit] flex items-center">Cosmic
+                                    Voyager</a>
+                                <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                    <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                                </div>
+                            </div>
+                            <div class="rounded-3xs flex flex-row items-center justify-center p-2.5">
+                                <img class="h-5 w-5 relative" alt="" src="/public/dots-1.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch h-6 relative tracking-[0.15px] leading-[24px] font-medium text-noble-black-300 flex items-center shrink-0">
+                            Here are a few concept arts that might inspire you. Take a look!
+                        </div>
+                        <div
+                            class="w-[948px] overflow-x-auto flex flex-row items-start justify-start gap-6 shrink-0 max-w-full">
+                            <div
+                                class="w-[300px] rounded-2xl overflow-hidden shrink-0 flex flex-row items-start justify-end pt-3 px-3 pb-[248px] box-border bg-[url('/public/image1@3x.png')] bg-cover bg-no-repeat bg-[top]">
+                                <div
+                                    class="h-10 shadow-[16px_24px_64px_-24px_rgba(255,_255,_255,_0.08)_inset,_0px_24px_24px_-16px_rgba(0,_0,_0,_0.12),_0px_8px_12px_rgba(255,_255,_255,_0.08)_inset] rounded-xl [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-fill border-t-[1px] border-solid box-border flex flex-row items-center justify-center py-2 px-2.5">
+                                    <img class="h-5 w-5 relative" alt="" src="/public/dots.svg" />
+                                </div>
+                            </div>
+                            <div
+                                class="flex-1 rounded-2xl overflow-hidden shrink-0 flex flex-row items-start justify-end pt-3 px-3 pb-[248px] bg-[url('/public/image2@3x.png')] bg-cover bg-no-repeat bg-[top]">
+                                <div
+                                    class="h-10 shadow-[16px_24px_64px_-24px_rgba(255,_255,_255,_0.08)_inset,_0px_24px_24px_-16px_rgba(0,_0,_0,_0.12),_0px_8px_12px_rgba(255,_255,_255,_0.08)_inset] rounded-xl [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-fill border-t-[1px] border-solid box-border flex flex-row items-center justify-center py-2 px-2.5">
+                                    <img class="h-5 w-5 relative" alt="" src="/public/dots.svg" />
+                                </div>
+                            </div>
+                            <div
+                                class="flex-1 rounded-2xl overflow-hidden shrink-0 flex flex-row items-start justify-end pt-3 px-3 pb-[248px] bg-[url('/public/image3@3x.png')] bg-cover bg-no-repeat bg-[top]">
+                                <div
+                                    class="h-10 shadow-[16px_24px_64px_-24px_rgba(255,_255,_255,_0.08)_inset,_0px_24px_24px_-16px_rgba(0,_0,_0,_0.12),_0px_8px_12px_rgba(255,_255,_255,_0.08)_inset] rounded-xl [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-fill border-t-[1px] border-solid box-border flex flex-row items-center justify-center py-2 px-2.5">
+                                    <img class="h-5 w-5 relative" alt="" src="/public/dots.svg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full h-28 absolute !m-[0] right-[0px] bottom-[0px] left-[0px] [background:linear-gradient(180deg,_rgba(19,_22,_25,_0),_#131619)]">
+            </div>
+            <div
+                class="self-stretch rounded-2xl border-noble-black-600 border-[1px] border-solid box-border flex flex-row items-start justify-start flex-wrap content-start py-3.5 px-[15px] gap-6 shrink-0 max-w-full">
+                <img class="h-12 w-12 relative rounded-xl" loading="lazy" alt="" src="/public/avatar.svg" />
+
+                <div
+                    class="flex-1 flex flex-col items-start justify-start py-2 px-0 box-border gap-6 min-w-[616px] max-w-full mq900:min-w-full">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-3">
+                        <div class="self-stretch flex flex-row items-center justify-between gap-5 mq450:flex-wrap">
+                            <div class="h-6 w-[135px] flex flex-row items-center justify-start gap-4">
+                                <div
+                                    class="self-stretch flex-1 relative tracking-[0.15px] leading-[24px] font-semibold flex items-center justify-center">
+                                    Ryan Lee
+                                </div>
+                                <div
+                                    class="h-[18px] w-[49px] relative text-xs tracking-[0.15px] leading-[18px] font-medium text-noble-black-400 flex items-center justify-center">
+                                    just now
+                                </div>
+                            </div>
+                            <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                <img class="h-4 w-4 relative" alt="" src="/public/copy.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch relative tracking-[0.15px] leading-[24px] text-left text-noble-black-300">
+                            <span class="font-medium">
+                                Actually, I think I really like
+                            </span>
+                            <span class="font-semibold text-lightgreen">Cosmic Voyager</span>
+                            <span class="font-medium">. Maybe we could stick with that name and work on designing a
+                                more realistic concept art? 🤔</span>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[247px] hidden flex-row items-start justify-start gap-3 text-left text-xs text-noble-black-300">
+                        <div
+                            class="h-8 flex-1 rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-2 px-[11px] box-border gap-1.5">
+                            <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+
+                            <div
+                                class="h-[18px] flex-1 relative tracking-[0.15px] leading-[18px] font-semibold flex items-center">
+                                Regenerate response
+                            </div>
+                            <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+                        </div>
+                        <div
+                            class="h-8 rounded-lg bg-noble-black-600 flex flex-row items-center justify-center py-2 px-3 box-border gap-0.5">
+                            <img class="h-4 w-4 relative hidden min-h-[16px]" alt="" src="/public/alertcircle.svg" />
+
+                            <div class="relative tracking-[0.15px] leading-[18px] font-semibold">
+                                Modify
+                            </div>
+                            <img class="h-4 w-4 relative min-h-[16px]" alt="" src="/public/chevrondowntiny.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex flex-row items-start justify-start gap-2 shrink-0 max-w-full text-left text-xs text-noble-black-400 mq900:flex-wrap">
+                <div
+                    class="rounded-lg bg-noble-black-800 flex flex-row items-start justify-start py-3.5 px-4 box-border gap-4 max-w-full">
+                    <img class="h-5 w-5 relative min-h-[20px]" loading="lazy" alt="" src="/public/bulb.svg" />
+
+                    <div
+                        class="flex flex-col items-start justify-start pt-px px-0 pb-0 box-border max-w-[calc(100%_-_36px)]">
+                        <div class="h-[18px] relative tracking-[0.15px] leading-[18px] flex items-center">
+                            <span>
+                                <span class="font-medium">Tip: From now Artificium has memorized the name '</span>
+                                <span class="font-semibold text-lightgreen">Cosmic Voyager</span>
+                                <span class="font-medium">' and added it to your project
+                                </span>
+                                <span class="font-semibold text-royalblue">Library</span>
+                                <span class="font-medium">.</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-start justify-start pt-2 px-0 pb-0">
+                    <div class="rounded-lg flex flex-row items-start justify-start py-[7px] px-3 gap-1.5">
+                        <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+
+                        <div class="relative tracking-[0.15px] leading-[18px] font-semibold inline-block min-w-[102px]">
+                            Don't show again
+                        </div>
+                        <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+                    </div>
+                </div>
+            </div>
+            <input
+                class="[border:none] [outline:none] bg-[transparent] w-full h-28 absolute !m-[0] top-[0px] right-[0px] left-[0px] [background:linear-gradient(180deg,_rgba(19,_22,_25,_0),_#131619)] z-[1]"
+                type="text" />
+
+            <div
+                class="self-stretch rounded-2xl border-noble-black-600 border-[1px] border-solid box-border flex flex-row items-start justify-start flex-wrap content-start pt-3.5 px-[15px] pb-[22px] gap-6 shrink-0 max-w-full">
+                <img class="h-12 w-12 relative rounded-xl" loading="lazy" alt="" src="/public/avatar-2.svg" />
+
+                <div
+                    class="flex-1 flex flex-col items-start justify-start pt-2 px-0 pb-0 box-border min-w-[616px] max-w-full mq900:min-w-full">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-6">
+                        <div class="self-stretch flex flex-col items-start justify-start gap-3">
+                            <div class="self-stretch flex flex-row items-center justify-between gap-5 mq450:flex-wrap">
+                                <div class="flex flex-row items-center justify-start gap-4">
+                                    <div
+                                        class="relative tracking-[0.15px] leading-[24px] font-semibold inline-block min-w-[77px]">
+                                        Artificium
+                                    </div>
+                                    <div
+                                        class="relative text-xs tracking-[0.15px] leading-[18px] font-medium text-noble-black-400 inline-block min-w-[49px]">
+                                        just now
+                                    </div>
+                                </div>
+                                <div class="rounded-lg flex flex-row items-center justify-center p-2">
+                                    <img class="h-4 w-4 relative" loading="lazy" alt="" src="/public/copy.svg" />
+                                </div>
+                            </div>
+                            <div
+                                class="self-stretch relative tracking-[0.15px] leading-[24px] font-medium text-noble-black-300 text-left">
+                                I'm glad you like the name Cosmic Voyager! And I agree, it's a
+                                great name for a spaceship. As for the concept art, I have
+                                some new designs that might be more to your liking. Take a
+                                look at these images.
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch grid flex-row items-start justify-start gap-6 grid-cols-[repeat(3,_minmax(225px,_1fr))] mq450:grid-cols-[minmax(225px,_1fr)] mq900:justify-center mq900:grid-cols-[repeat(2,_minmax(225px,_390px))]">
+                            <div
+                                class="rounded-2xl overflow-hidden flex flex-row items-start justify-end pt-3 px-3 pb-[248px] bg-[url('/public/image4@3x.png')] bg-cover bg-no-repeat bg-[top]">
+                                <div
+                                    class="h-10 shadow-[16px_24px_64px_-24px_rgba(255,_255,_255,_0.08)_inset,_0px_24px_24px_-16px_rgba(0,_0,_0,_0.12),_0px_8px_12px_rgba(255,_255,_255,_0.08)_inset] rounded-xl [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-fill border-t-[1px] border-solid box-border flex flex-row items-center justify-center py-2 px-2.5">
+                                    <img class="h-5 w-5 relative" loading="lazy" alt="" src="/public/dots.svg" />
+                                </div>
+                            </div>
+                            <div
+                                class="rounded-2xl overflow-hidden flex flex-row items-start justify-end pt-3 px-3 pb-[248px] bg-[url('/public/image5@3x.png')] bg-cover bg-no-repeat bg-[top]">
+                                <div
+                                    class="h-10 shadow-[16px_24px_64px_-24px_rgba(255,_255,_255,_0.08)_inset,_0px_24px_24px_-16px_rgba(0,_0,_0,_0.12),_0px_8px_12px_rgba(255,_255,_255,_0.08)_inset] rounded-xl [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-fill border-t-[1px] border-solid box-border flex flex-row items-center justify-center py-2 px-2.5">
+                                    <img class="h-5 w-5 relative" loading="lazy" alt="" src="/public/dots.svg" />
+                                </div>
+                            </div>
+                            <div
+                                class="rounded-2xl overflow-hidden flex flex-row items-start justify-end pt-3 px-3 pb-[248px] bg-[url('/public/image6@3x.png')] bg-cover bg-no-repeat bg-[top]">
+                                <div
+                                    class="h-10 shadow-[16px_24px_64px_-24px_rgba(255,_255,_255,_0.08)_inset,_0px_24px_24px_-16px_rgba(0,_0,_0,_0.12),_0px_8px_12px_rgba(255,_255,_255,_0.08)_inset] rounded-xl [background:linear-gradient(117.58deg,_rgba(215,_237,_237,_0.16),_rgba(205,_235,_235,_0))] border-glass-fill border-t-[1px] border-solid box-border flex flex-row items-center justify-center py-2 px-2.5">
+                                    <img class="h-5 w-5 relative" loading="lazy" alt="" src="/public/dots.svg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row items-start justify-start gap-3 text-left text-xs text-noble-black-300">
+                            <div
+                                class="rounded-lg bg-noble-black-600 flex flex-row items-start justify-start py-[7px] px-[11px] gap-1.5">
+                                <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+
+                                <div
+                                    class="relative tracking-[0.15px] leading-[18px] font-semibold inline-block min-w-[128px]">
+                                    Regenerate response
+                                </div>
+                                <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+                            </div>
+                            <select
+                                class="rounded-lg bg-noble-black-600 [border:none] flex flex-row items-start justify-start py-[7px] px-3 font-body-s-semibold font-semibold text-xs text-noble-black-300"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer
+            class="absolute top-[916px] left-[336px] rounded-xl bg-noble-black-800 w-[1092px] flex flex-row items-start justify-start flex-wrap content-start p-6 box-border gap-6 max-w-full text-left text-base text-noble-black-500 font-body-s-semibold">
+            <div class="h-12 rounded-xl flex flex-row items-center justify-center py-2 px-3 box-border">
+                <img class="h-6 w-6 relative" loading="lazy" alt="" src="/public/microphone.svg" />
+            </div>
+            <div class="flex-1 flex flex-row items-start justify-start py-3 px-0 box-border min-w-[328px] max-w-full">
+                <div class="relative tracking-[0.15px] leading-[24px] font-medium">
+                    You can ask me anything! I am here to help.
+                </div>
+            </div>
+            <div class="h-12 rounded-xl flex flex-row items-center justify-center py-2 px-3 box-border">
+                <img class="h-6 w-6 relative" loading="lazy" alt="" src="/public/attachment.svg" />
+            </div>
+            <div
+                class="h-12 rounded-xl bg-noble-black-600 flex flex-row items-center justify-center py-2 px-3 box-border">
+                <img class="h-6 w-6 relative" loading="lazy" alt="" src="/public/paperplane.svg" />
+            </div>
+        </footer>
+        <header
+            class="absolute top-[12px] left-[12px] w-[1416px] flex flex-row items-start justify-start flex-wrap content-start gap-3 max-w-full text-left text-xs text-noble-black-0 font-body-s-semibold">
+            <select
+                class="w-[312px] bg-[transparent] border-noble-black-700 border-b-[1px] border-solid box-border flex flex-row items-start justify-between pt-[25px] px-6 pb-[22px] font-body-s-semibold font-semibold text-base text-noble-black-0 gap-5"></select>
+            <div class="flex-1 flex flex-row items-start justify-start min-w-[710px] max-w-full mq900:min-w-full">
+                <div
+                    class="flex-1 border-noble-black-700 border-b-[1px] border-solid box-border flex flex-row items-start justify-between pt-6 px-6 pb-[22px] relative max-w-full gap-5 mq900:flex-wrap">
+                    <div class="flex flex-col items-start justify-start gap-1 max-w-full text-center text-xl">
+                        <a
+                            class="[text-decoration:none] relative leading-[32px] font-bold text-[inherit] mq450:text-base mq450:leading-[26px]">Orbital
+                            Oddysey</a>
+                        <div class="relative text-sm tracking-[0.15px] leading-[20px] font-medium text-noble-black-300">
+                            Marketing Campaign for a new TV series Launch
+                        </div>
+                    </div>
+                    <div
+                        class="w-[326px] flex flex-col items-start justify-start pt-2 px-0 pb-0 box-border max-w-full text-noble-black-400">
+                        <div class="self-stretch flex flex-row items-start justify-start gap-6">
+                            <div class="w-36 flex flex-col items-start justify-start pt-1 px-0 pb-0 box-border">
+                                <div class="self-stretch h-8 flex flex-row items-start justify-start">
+                                    <img class="h-8 w-8 relative rounded-xl shrink-0" alt=""
+                                        src="/public/avatar-11.svg" />
+
+                                    <img class="h-8 w-8 relative rounded-xl shrink-0 z-[1] ml-[-4px]" alt=""
+                                        src="/public/avatar-12.svg" />
+
+                                    <img class="h-8 w-8 relative rounded-xl shrink-0 z-[2] ml-[-4px]" alt=""
+                                        src="/public/avatar-13.svg" />
+
+                                    <img class="h-8 w-8 relative rounded-xl shrink-0 z-[3] ml-[-4px]" loading="lazy"
+                                        alt="" src="/public/avatar-14.svg" />
+
+                                    <div
+                                        class="h-[38px] flex-1 rounded-xl bg-noble-black-600 border-noble-black-800 border-[3px] border-solid box-border overflow-hidden flex flex-row items-start justify-start pt-1.5 px-2 pb-2 shrink-0 z-[4] ml-[-4px]">
+                                        <div
+                                            class="relative tracking-[0.15px] leading-[18px] font-semibold inline-block min-w-[16px]">
+                                            +4
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row items-start justify-start gap-4 text-sm">
+                                <div class="rounded-3xs flex flex-row items-start justify-start py-2.5 px-4 gap-2.5">
+                                    <img class="h-5 w-5 relative min-h-[20px]" loading="lazy" alt=""
+                                        src="/public/share.svg" />
+
+                                    <div
+                                        class="relative tracking-[0.15px] leading-[20px] font-semibold inline-block min-w-[40px]">
+                                        Share
+                                    </div>
+                                    <img class="h-5 w-5 relative hidden min-h-[20px]" alt=""
+                                        src="/public/alertcircle1.svg" />
+                                </div>
+                                <div
+                                    class="h-10 rounded-3xs bg-noble-black-600 flex flex-row items-center justify-center py-2 px-2.5 box-border">
+                                    <img class="h-5 w-5 relative" loading="lazy" alt="" src="/public/edit.svg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[151px] !m-[0] absolute bottom-[12px] left-[108px] rounded-lg bg-noble-black-600 flex flex-row items-start justify-start py-[7px] px-[11px] box-border gap-1.5 text-noble-black-300">
+                        <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+
+                        <div
+                            class="h-[18px] flex-1 relative tracking-[0.15px] leading-[18px] font-semibold flex items-center">
+                            Regenerate response
+                        </div>
+                        <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+                    </div>
+                    <button
+                        class="cursor-pointer [border:none] py-[7px] px-3 bg-noble-black-600 h-8 w-[84px] !m-[0] absolute bottom-[12px] left-[271px] rounded-lg flex flex-row items-start justify-start box-border gap-0.5">
+                        <img class="h-4 w-4 relative hidden" alt="" src="/public/alertcircle.svg" />
+
+                        <a
+                            class="[text-decoration:none] self-stretch flex-1 relative text-xs tracking-[0.15px] leading-[18px] font-semibold font-body-s-semibold text-noble-black-300 text-left flex items-center">Modify</a>
+                        <div class="flex flex-col items-start justify-start pt-px px-0 pb-0">
+                            <img class="w-4 h-4 relative" alt="" src="/public/chevrondowntiny.svg" />
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+
+</html>
