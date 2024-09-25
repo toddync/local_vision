@@ -15,14 +15,53 @@
 	function send() {
 		if (!$message.text && $message.images.length == 0) return;
 		input.focus();
-		console.log($message.images[0]);
-		$messages.push({ text: $message.text, images: $message.images });
+		$messages.push({
+			text: $message.text,
+			images: $message.images,
+			from: "user",
+		});
 		$messages = $messages;
-		$message.text = "";
-		$message.images = [];
+
+		res();
+
 		setTimeout(() => {
 			$messageBox.scrollTop = $messageBox.scrollHeight;
 		}, 100);
+	}
+
+	async function res() {
+		const data = {
+			model: "llava-phi3",
+			prompt: $message.text || "",
+			stream: false,
+		};
+
+		if ($message.images.length)
+			data.images = $message.images.map((img) => img.split(",")[1]);
+		$message.text = "";
+		$message.images = [];
+		let url = "https://0c13-35-247-142-244.ngrok-free.app";
+		try {
+			const response = await fetch(`${url}/api/generate`, {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(data),
+			});
+			if (!response.ok) return;
+			let description = await response.json();
+			description = description.response;
+
+			$messages[$messages.length] = {
+				text: description,
+				images: [],
+			};
+			$messages = $messages;
+			setTimeout(() => {
+				$messageBox.scrollTop = $messageBox.scrollHeight;
+			}, 100);
+		} catch (e) {}
 	}
 
 	async function getBase64(file) {
