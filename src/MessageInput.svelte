@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	//@ts-nocheck
 	import { Mic, Paperclip, Send, X } from "lucide-svelte";
 	import { writable } from "svelte/store";
@@ -13,6 +13,7 @@
 	let input = null;
 	let img = null;
 
+	// Função para enviar mensagem
 	function send() {
 		if (!$message.text && $message.images.length == 0) return;
 		input.focus();
@@ -30,6 +31,7 @@
 		}, 100);
 	}
 
+	// Função para processamento de resposta do servidor
 	async function res() {
 		const data = {
 			model: "llava-phi3",
@@ -43,7 +45,7 @@
 		$message.text = "";
 		$message.images = [];
 
-		let url = "https://cae9-44-204-28-144.ngrok-free.app";
+		let url = "http://localhost:11434";
 
 		try {
 			const response = await fetch(`${url}/api/generate`, {
@@ -69,6 +71,7 @@
 		} catch (e) {}
 	}
 
+	// Função para converter imagem para base64 e adicionar ao array de imagens
 	async function getBase64(file) {
 		var reader = new FileReader();
 		reader.readAsDataURL(file);
@@ -83,17 +86,23 @@
 
 <footer
 	class="flex flex-col px-6 py-3 mx-6 mb-2 text-base rounded-xl bg-noble-black-800 text-noble-black-500 font-body-s-semibold"
+	aria-label="Caixa de entrada para envio de mensagens"
 >
 	<div
 		data-len={$message.images.length > 0 ? true : null}
 		class="grid grid-cols-3 gap-5 h-0 data-[len]:h-40 data-[len]:pb-6 transition-height duration-500 ease-in-out overflow-hidden"
+		role="list"
+		aria-label="Lista de imagens anexadas"
 	>
 		{#each $message.images as src, i}
 			<div
 				class="relative flex p-3 transition-all max-h-40 hover:bg-noble-black-400/5 rounded-2xl"
+				role="listitem"
+				aria-label={`Imagem ${i + 1}`}
 			>
 				<button
 					class="absolute top-0 right-0 rounded bg-noble-black-600"
+					aria-label="Remover imagem"
 					on:click={() => {
 						$message.images.splice(i, 1);
 						$message.images = $message.images;
@@ -104,22 +113,25 @@
 				<img
 					{src}
 					class="max-w-full max-h-full mx-auto my-auto"
-					alt=""
+					alt={`Imagem anexada ${i + 1}`}
 				/>
 			</div>
 		{/each}
 	</div>
 
 	<div class="flex flex-1 gap-6">
-		<Mic class="hidden w-6 my-auto text-noble-black-400" />
+		<Mic
+			class="hidden w-6 my-auto text-noble-black-400"
+			aria-hidden="true"
+		/>
 		<div class="flex flex-1">
-			<!-- svelte-ignore a11y-autofocus -->
 			<input
 				class="text-base bg-transparent outline-none text-noble-black-200 placeholder:text-noble-black-400 size-full"
-				placeholder="Type here..."
+				placeholder="Digite a mensagem"
 				bind:value={$message.text}
 				on:keydown={(e) => e.key == "Enter" && send()}
 				bind:this={input}
+				aria-label="Campo de entrada de mensagem"
 				autofocus
 			/>
 			<input
@@ -128,21 +140,26 @@
 				type="file"
 				accept="image/png, image/jpeg"
 				on:input={(e) => getBase64(e.target.files[0])}
+				aria-hidden="true"
 			/>
 		</div>
 
+		<!-- Botão para anexar imagem com aria-label descritivo -->
 		<button
 			class="bg-transparent cursor-pointer group"
 			on:click={() => img.click()}
+			aria-label="Anexar uma imagem"
 		>
 			<Paperclip
 				class="my-auto transition-all size-6 text-noble-black-400 group-hover:stroke-lime-500"
 			/>
 		</button>
 
+		<!-- Botão de envio com feedback visual e aria-label descritivo -->
 		<button
 			class="flex p-3 rounded-full cursor-pointer bg-noble-black-600 group"
 			on:click={send}
+			aria-label="Enviar mensagem"
 		>
 			<Send
 				class="w-6 mx-auto my-auto transition-all text-noble-black-400 group-hover:stroke-lime-500"

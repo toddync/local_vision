@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Recorder from "./lib/recorder.svelte";
 	import MessageBox from "./MessageBox.svelte";
 	import MessageBoxHeader from "./MessageBoxHeader.svelte";
 	import MessageInput from "./MessageInput.svelte";
@@ -13,3 +14,5 @@
 		<MessageInput />
 	</div>
 </div>
+
+<!-- <Recorder /> -->
