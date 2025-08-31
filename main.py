@@ -1,37 +1,40 @@
-from discord.ext import commands
-from dotenv import load_dotenv
-from discord import Message
-import discord
-import logging
-import os
+import asyncio
+import signal
 
-load_dotenv()
-token = os.getenv("DISCORD_TOKEN")
-handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
+from bot import bot, token
+from app import app
 
-intents = discord.Intents.default()
-intents.message_content = True
-bot = commands.Bot(command_prefix='!', intents=intents)
+async def main():
+    app_task = asyncio.create_task(app.run_async())
+    bot_task = asyncio.create_task(bot.start(token))
 
-@bot.event
-async def on_ready():
-    print(f'Logged in as {bot.user.name}')
-    print('------')
+    loop = asyncio.get_running_loop()
+    stop_event = asyncio.Event()
 
-@bot.event
-async def on_message(message: Message):
-    if message.author == bot.user: return
+    def _signal_handler():
+        stop_event.set()
 
-    print(f'Message from {message.author}')
+    for sig in (signal.SIGINT, signal.SIGTERM):
+        loop.add_signal_handler(sig, _signal_handler)
 
-    descriptions = []
+    stop_task = asyncio.create_task(stop_event.wait())
 
-    for attach in message.attachments:
-        print("image" in attach.content_type, attach.filename)
-        if "image" in attach.content_type:
-            img_data = await attach.read()
-            print(f'found image: {attach.filename}')
+    _, pending = await asyncio.wait(
+        [app_task, bot_task, stop_task],
+        return_when=asyncio.FIRST_COMPLETED,
+    )
 
-    await bot.process_commands(message)
+    for task in pending:
+        task.cancel()
 
-bot.run(token, log_handler=handler, log_level=logging.DEBUG)
+    if app_task and not app_task.done():
+        await app.shutdown()
+
+    if not bot_task.done():
+        await bot.close()
+
+    await asyncio.gather(*pending, return_exceptions=True)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

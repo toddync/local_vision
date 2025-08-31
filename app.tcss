@@ -1,0 +1,23 @@
+Screen {
+    align: center middle;
+}
+
+Digits {
+    width: auto;
+}
+
+.input-area {
+    align: center middle;
+    height: auto;
+    layout: horizontal;
+    dock: bottom;
+    margin: 0 1 2 1;
+}
+
+.input-area Input {
+    width: 1fr
+}
+
+.input-area Button {
+    max-width: 5
+}

@@ -1,2 +1,5 @@
+textual
+lmstudio
 discord.py
+textual-dev
 python-dotenv
