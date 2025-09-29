@@ -2,10 +2,11 @@ import asyncio
 import signal
 
 from bot import bot, token
-from app import app
+# from app import app
+
 
 async def main():
-    app_task = asyncio.create_task(app.run_async())
+    # app_task = asyncio.create_task(app.run_async())
     bot_task = asyncio.create_task(bot.start(token))
 
     loop = asyncio.get_running_loop()
@@ -21,7 +22,7 @@ async def main():
 
     _, pending = await asyncio.wait(
         [
-            app_task,
+            # app_task,
             bot_task,
             stop_task
         ],
@@ -31,8 +32,8 @@ async def main():
     for task in pending:
         task.cancel()
 
-    if app_task and not app_task.done():
-        await app.exit()
+    # if app_task and not app_task.done():
+    #     await app.exit()
 
     if not bot_task.done():
         await bot.close()
