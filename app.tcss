@@ -1,23 +1,48 @@
-Screen {
-    align: center middle;
-}
-
 Digits {
     width: auto;
 }
 
 .input-area {
     align: center middle;
-    height: auto;
     layout: horizontal;
+    margin: 0 0 1 0;
+    height: auto;
     dock: bottom;
-    margin: 0 1 2 1;
+    padding: 1;
 }
 
-.input-area Input {
-    width: 1fr
+.input-area TextArea {
+    width: 1fr;
+    height: auto;
+    max-height: 10;
 }
 
 .input-area Button {
-    max-width: 5
+    max-width: 5;
+    height: 3;
+}
+
+.center {
+    height: 100%;
+    align: center middle;
+}
+
+.messages-area {
+    width: 100%;
+    layout: vertical;
+    margin: 1 1 3 1;
+}
+
+Message {
+    width: 100%;
+    align: right middle;
+}
+
+
+.user-message {
+    background: gray 50%;
+    max-width: 70%;
+    width: auto;
+    margin: 0 0 1 0;
+    padding: 1 1 0 1
 }

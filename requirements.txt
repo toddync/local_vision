@@ -1,5 +1,5 @@
-textual
-lmstudio
 discord.py
-textual-dev
 python-dotenv
+httpx
+tk
+Pillow

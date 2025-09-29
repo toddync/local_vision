@@ -20,7 +20,11 @@ async def main():
     stop_task = asyncio.create_task(stop_event.wait())
 
     _, pending = await asyncio.wait(
-        [app_task, bot_task, stop_task],
+        [
+            app_task,
+            bot_task,
+            stop_task
+        ],
         return_when=asyncio.FIRST_COMPLETED,
     )
 
@@ -28,7 +32,7 @@ async def main():
         task.cancel()
 
     if app_task and not app_task.done():
-        await app.shutdown()
+        await app.exit()
 
     if not bot_task.done():
         await bot.close()
